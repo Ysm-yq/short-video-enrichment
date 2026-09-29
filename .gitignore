@@ -1,0 +1,21 @@
+# Local media and private project data
+*.mp4
+*.mov
+*.m4v
+*.mp3
+*.m4a
+*.wav
+*.ogg
+*.png
+*.jpg
+*.jpeg
+*.webp
+short_video_enrichment.yaml
+*.local.yaml
+*.local.json
+secrets/
+private/
+output/
+preview/
+__pycache__/
+.DS_Store

@@ -1,0 +1,16 @@
+voice:
+  selection_required: true
+  speaker: BV001_fast_streaming
+  display_name: 小姐姐
+subtitle:
+  regular_font: "MaoKenTangYuan (beta)"
+  regular_color: "#FFFFFF"
+  flower_color: "#FFE34A"
+  safe_height_ratio: 0.78
+graphics:
+  highlight_decoration_groups: "2-4"
+  ordinary_decoration_groups: "1-2"
+  person_cutout_highlights: "1-2"
+audio:
+  preserve_original_if_useful: true
+  allow_second_bgm: true

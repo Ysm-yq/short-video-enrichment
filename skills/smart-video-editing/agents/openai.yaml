@@ -1,0 +1,5 @@
+interface:
+  display_name: 智能素材粗剪与短视频制作
+  short_description: 从原始素材去重、智能粗剪，到旁白字幕配乐花字装饰和成片验收
+  default_prompt: Use $smart-video-editing to complete the supplied video task using
+    confirmed preferences and report verified outputs.

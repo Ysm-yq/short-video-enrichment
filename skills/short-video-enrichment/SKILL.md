@@ -20,7 +20,7 @@ Use this skill for an existing cut that needs a complete sound and graphic pass.
 
 Resolve the project directory, source video, optional brief/script documents, music, fonts, stickers, and reference images. If multiple videos are present, choose the explicitly named source; otherwise stop and ask which one. Read the brief before writing copy. Inspect metadata with `ffprobe`, sample the whole video at regular intervals, and measure whether the source audio contains useful speech or ambience.
 
-Create a small project configuration before rendering. It records the confirmed voice, font, colors, caption position, decoration density, original-audio decision, music choice, and output paths. If the user says “直接执行”, use the saved defaults and do not pause for a plan. If a voice or font has never been confirmed for this project, show a short choice list or preview first, then save the selection.
+Create a small project configuration before rendering. It records the confirmed voice, font, colors, caption position, decoration density, original-audio decision, music choice, and output paths. If the user says “直接执行”, use the saved defaults and do not pause for a plan. Reuse confirmed personal choices across projects. For first-use selection and explicit voice-choice requests, read [personalization.md](references/personalization.md).
 
 ## Personalizable defaults
 
@@ -59,13 +59,15 @@ Keep the source resolution, aspect ratio, frame rate, shot order, and duration. 
 The final check must verify:
 
 1. Output exists and decodes from beginning to end without errors.
-2. Resolution, frame rate, and frame count match the source within one frame; duration is unchanged unless the user requested an extension.
+2. Fixed-picture CFR output preserves frame count and cadence; VFR output is checked by timestamps and presentation duration. Investigate drift rather than forcing a frame rate.
 3. Narration and subtitles align; no subtitle is clipped or placed in the platform danger zone.
 4. Speech is intelligible, music does not mask it, and useful original sound remains audible.
 5. Flower text, stickers, and decorations do not cover faces or important subjects.
 6. The report names the exact output path and lists any unverified assumption, missing font, or licensing limitation.
 
 ## Related references
+
+- Before production or revision, read [reuse-and-validation.md](references/reuse-and-validation.md) for cache invalidation, audible music checks and dependency boundaries.
 
 - Read [config-schema.md](references/config-schema.md) when creating or updating a project configuration.
 - Read [production-workflow.md](references/production-workflow.md) when executing a full render or a revision pass.

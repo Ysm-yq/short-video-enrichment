@@ -1,4 +1,5 @@
 interface:
-  display_name: "短视频字幕配乐旁白增效剪辑"
-  short_description: "为已有短视频自动生成旁白、同步字幕、背景音乐、花字与轻量装饰，并完成成片验收"
-  default_prompt: "为这个已剪好的短视频增加旁白、同步字幕、背景音乐、花字和轻量装饰，先按本 Skill 的选择流程确认音色与风格，再输出成片和可修改素材。"
+  display_name: 短视频字幕配乐旁白增效剪辑
+  short_description: 为已有短视频自动生成旁白、同步字幕、背景音乐、花字与轻量装饰，并完成成片验收
+  default_prompt: Use $short-video-enrichment to complete the supplied video task
+    using confirmed preferences and report verified outputs.

@@ -45,4 +45,4 @@ outputs:
   save_previews: true
 ```
 
-When `selection_required` is true and no saved project choice exists, present a compact choice step before producing narration. Once confirmed, set it to false in the project profile while retaining the chosen value.
+Resolve the current request, project profile and confirmed user profile first. Ask only for unresolved choices or an explicitly requested audition; retain confirmed choices across projects. Store personal profiles outside the public repository. Example values do not mean a public user's choices are confirmed.

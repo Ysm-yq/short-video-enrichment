@@ -1,0 +1,18 @@
+raw_material_dir: "C:/absolute/path/raw-materials"
+project_dir: "C:/absolute/path/project"
+brief_files: []
+theme: ""
+target_duration_seconds: 60
+target_platform: douyin
+mode: execute
+pause_after_rough_cut: false
+rough_cut:
+  preferred_route: jianying_desktop_smart_rough_cut
+  fallback_route: ask_for_export_or_alternative
+enrichment:
+  inherit_from: short-video-enrichment
+  enable_voice: true
+  enable_bgm: true
+  enable_sfx: true
+  enable_flower_text: true
+  enable_decorations: true
